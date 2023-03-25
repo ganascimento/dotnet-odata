@@ -18,7 +18,7 @@ This project was developed to test OData and the filter possibilities in the que
 | LESS THAN             | $filter=Id lt 1                         |
 | LESS THAN OR EQUAL    | $filter=Id le 2                         |
 | AND                   | $filter=Id eq 1 and contains(Name, '1') |
-| OR                    | ?$filter=Id eq 1 or contains(Name, '2') |
+| OR                    | $filter=Id eq 1 or contains(Name, '2')  |
 | IN                    | $filter=Id in (1,3)                     |
 
 ### Select
@@ -73,6 +73,7 @@ $skip=5
 Run in project folder
 
 ```
+docker build -t pockodata1 .
 docker-compose up
 ```
 
